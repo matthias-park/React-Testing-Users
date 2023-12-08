@@ -12,7 +12,7 @@ test('render one row per user', () => {
   //Find all the rows in the table
   // eslint-disable-next-line
   const rows = container.querySelectorAll('tbody tr');
-  // const rows = within(screen.getByTestId('users'));
+  // const rows = within(screen.getByTestId('users')).getAllByRole('row');
 
   // Assertion: correct number of rows in the table
   expect(rows).toHaveLength(2);
